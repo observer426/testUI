@@ -1,0 +1,47 @@
+INFO  2023-06-01 18:50:07,454 minitest.py _miniSetUp      341 =========Current case: test_scroll_to=========
+INFO  2023-06-01 18:50:07,455 minitest.py _miniSetUp      344 package info: D:.test.test.first_test, case info: TestPage.test_scroll_to
+INFO  2023-06-01 18:50:07,455 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-06-01 18:50:07,455 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-06-01 18:50:07,456 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-06-01 18:50:07,456 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-06-01 18:50:07,457 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-06-01 18:50:07,457 connection.py _safely_send    417 ASYNC_SEND > {"id":"f6629ab7-6d15-4d5a-b56a-9ed7f2c95ea6","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/main/main"}]}}
+DEBUG 2023-06-01 18:50:07,474 connection.py _on_message     652 RECV < {"id":"f6629ab7-6d15-4d5a-b56a-9ed7f2c95ea6","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-06-01 18:50:07,475 connection.py _handle_async_msg 688 received async msg: f6629ab7-6d15-4d5a-b56a-9ed7f2c95ea6
+INFO  2023-06-01 18:50:07,477 minitest.py capture         673 capture setup.png
+INFO  2023-06-01 18:50:07,478 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-06-01 18:50:07,479 connection.py _safely_send    417 SEND > {"id":"14fa9c1c-d9cc-4151-9553-7e414053798d","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-06-01 18:50:07,722 connection.py _on_message     650 RECV < {"id":"14fa9c1c-d9cc-4151-9553-7e414053798d","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvFePZVmWHrbW2ua46024tJWVWa4te9qQHIJmSBF6ECgBAvSgFz0I0oN+j36AXgS+SBBESIAgkRhxMJzp4Uz3THVXd5mstOEjblx/7N57LT2cG1FZzR5CB4HICJwT955tcn3rM+fi//zzP2HnEbHX7SqlyrwQEY3kA59eF29mxYuzy6vttqj8/mR0MOglShRXMXHsnXHb9w96P/3+R900QjT7R4+ADKJZFvVvX7+dbdaeiBGERVgYIAAIgrAHAEQEABFhZmgPBBZpXMPBKVLMZOJsdbPMb+ZPjg4+fvKoG0Un1xeX+aoEzwQCQIAAgABJWY9slNiEyLjaiwiCNE0JwFpTJ4339yaDXieOlLE6MBe1i5POv/...
+INFO  2023-06-01 18:50:07,725 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-06-01 18:50:07,726 minitest.py _miniSetUp      394 =========case: test_scroll_to start=========
+INFO  2023-06-01 18:50:07,727 app.py     redirect_to     544 RedirectTo: /pages/main/main
+DEBUG 2023-06-01 18:50:07,727 connection.py _safely_send    417 ASYNC_SEND > {"id":"5c5d28c3-ba72-4fec-b63c-5e8782b29663","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/main/main"}]}}
+DEBUG 2023-06-01 18:50:07,761 connection.py _on_message     652 RECV < {"id":"5c5d28c3-ba72-4fec-b63c-5e8782b29663","result":{"result":{"errMsg":"redirectTo:ok"}}}
+INFO  2023-06-01 18:50:07,762 connection.py _handle_async_msg 688 received async msg: 5c5d28c3-ba72-4fec-b63c-5e8782b29663
+DEBUG 2023-06-01 18:50:07,913 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":5,"path":"pages/main/main","query":{},"openType":"redirectTo","__ts__":1685616607888},1685616607889]}}
+INFO  2023-06-01 18:50:07,916 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 5, 'path': 'pages/main/main', 'query': {}, 'openType': 'redirectTo', '__ts__': 1685616607888}, 1685616607889]}
+DEBUG 2023-06-01 18:50:07,917 connection.py _safely_send    417 SEND > {"id":"cc04a392-cd78-4f5e-9ed7-6e1a27500d3a","method":"App.addBinding","params":{"name":"page_hook_scroll_super_callback"}}
+DEBUG 2023-06-01 18:50:07,924 connection.py _on_message     652 RECV < {"id":"cc04a392-cd78-4f5e-9ed7-6e1a27500d3a","result":{}}
+DEBUG 2023-06-01 18:50:07,926 connection.py _safely_send    417 SEND > {"id":"e944e287-e0dc-40cc-b376-ba59b2856d64","method":"App.callFunction","params":{"functionDeclaration":"function hookCurrentPageMethod(){var _=getCurrentPages().pop();if(_.scroll){if(_.scroll.__hooked__)return;var e=_.scroll;_.scroll=function(..._){\"undefined\"!=typeof page_hook_scroll_super_callback&&page_hook_scroll_super_callback(..._),e.call(this,..._)}.bind(_),_.scroll.__hooked__=!0}}","args":[]}}
+DEBUG 2023-06-01 18:50:07,935 connection.py _on_message     652 RECV < {"id":"e944e287-e0dc-40cc-b376-ba59b2856d64","result":{}}
+INFO  2023-06-01 18:50:07,936 page.py    _get_elements_by_css 559 try to get elements: scroll-view
+DEBUG 2023-06-01 18:50:07,937 connection.py _safely_send    417 SEND > {"id":"8687f096-3081-4e3e-adaf-9bdf124d4a21","method":"Page.getElements","params":{"selector":"scroll-view","pageId":5}}
+DEBUG 2023-06-01 18:50:08,080 connection.py _on_message     652 RECV < {"id":"8687f096-3081-4e3e-adaf-9bdf124d4a21","result":{"elements":[{"elementId":"caa36541-c004-43b8-a96c-b5b3a2b77e21","tagName":"scroll-view"}]}}
+INFO  2023-06-01 18:50:08,081 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.ViewElement object at 0x000001AB62127A90>]
+DEBUG 2023-06-01 18:50:08,081 connection.py _safely_send    417 SEND > {"id":"5bc5dbce-a702-452e-b1ec-2e8e8f3e41b8","method":"Element.callFunction","params":{"functionName":"scroll-view.scrollTo","args":[20,0],"elementId":"caa36541-c004-43b8-a96c-b5b3a2b77e21","pageId":5}}
+DEBUG 2023-06-01 18:50:08,088 connection.py _on_message     652 RECV < {"id":"5bc5dbce-a702-452e-b1ec-2e8e8f3e41b8","result":{}}
+DEBUG 2023-06-01 18:50:08,090 minitest.py _miniTearDown   587 =========Current case Down: test_scroll_to=========
+INFO  2023-06-01 18:50:08,091 minitest.py capture         673 capture teardown.png
+INFO  2023-06-01 18:50:08,093 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-06-01 18:50:08,095 connection.py _safely_send    417 SEND > {"id":"44ac6b4a-2cfe-4a3f-9450-8b5bdfc7f41f","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-06-01 18:50:08,341 connection.py _on_message     650 RECV < {"id":"44ac6b4a-2cfe-4a3f-9450-8b5bdfc7f41f","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvEePJVmWJnbOucLU08JVyIyMSFWyq0tMdw9G9AwHXBBDAgS44IYLglzw9/AHcEPMhgTBAQkQ5Aya02hRPd1V3VmZVSlDunZ//rTJe+85XNhzz8ia6gENDg93mPl7dkWc73zCHv7PP/9Tdh4Re92uUqrMCxHRSD7w6XXxelY8P7u82m6Lyu9PRgeDXqJEcRUTx94Zt333oPfT73/QTSNEs3/0CMggmmVR/+bVm9lm7YkYQViEhQECgCAIewBARAAQEWaG9kBgkcY1HJwixUwmzlY3y/xm/uTo4MMnj7pRdHJ9cZmvSvBMIAAECAAIkJT1yEaJTYiMq72IIEjTlACsNXXSeH9vMuh14kgZqwNzUbs46fzr//...
+INFO  2023-06-01 18:50:08,347 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-06-01 18:50:08,348 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-06-01 18:50:08,349 basenative.py wrapper         29  call BaseNative.get_start_up end
+ERROR 2023-06-01 18:50:08,351 assertbase.py _get_stack_info 342 <bound method TestPage.test_scroll_to of <test.first_test.TestPage testMethod=test_scroll_to>>
+Traceback (most recent call last):
+  File "D:\test\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 41, in testPartExecutor
+    yield
+  File "D:\test\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 127, in run
+    self._callTestMethod(testMethod)
+AssertionError: No callback received within 0 seconds

@@ -1,0 +1,31 @@
+INFO  2023-05-29 01:48:06,728 minitest.py _miniSetUp      341 =========Current case: test_get_system_info=========
+INFO  2023-05-29 01:48:06,737 minitest.py _miniSetUp      344 package info: D:.test.test.first_test, case info: FirstTest.test_get_system_info
+INFO  2023-05-29 01:48:06,739 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-05-29 01:48:06,740 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-05-29 01:48:06,741 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-05-29 01:48:06,741 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-05-29 01:48:06,742 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-05-29 01:48:06,744 connection.py _safely_send    417 ASYNC_SEND > {"id":"df7b81b6-d531-4c79-9e73-0bc8ee3368f0","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/main/main"}]}}
+DEBUG 2023-05-29 01:48:06,784 connection.py _on_message     652 RECV < {"id":"df7b81b6-d531-4c79-9e73-0bc8ee3368f0","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-29 01:48:06,785 connection.py _handle_async_msg 688 received async msg: df7b81b6-d531-4c79-9e73-0bc8ee3368f0
+INFO  2023-05-29 01:48:06,787 minitest.py capture         673 capture setup.png
+INFO  2023-05-29 01:48:06,788 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-29 01:48:06,789 connection.py _safely_send    417 SEND > {"id":"dfdf9b01-45ff-49ff-9efb-e195c60d4557","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-29 01:48:07,106 connection.py _on_message     650 RECV < {"id":"dfdf9b01-45ff-49ff-9efb-e195c60d4557","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvFePZVmWHrbW2ua46024tJWVWa4te9qQHIJmSBF6ECgBAvSgFz0I0oN+j36AXgS+SBBESIAgkRhxMJzp4Uz3THVXd5mstOEjblx/7N57LT2cG1FZzR5CB4HICJwT955tcn3rM+fi//zzP2HnEbHX7SqlyrwQEY3kA59eF29mxYuzy6vttqj8/mR0MOglShRXMXHsnXHb9w96P/3+R900QjT7R4+ADKJZFvVvX7+dbdaeiBGERVgYIAAIgrAHAEQEABFhZmgPBBZpXMPBKVLMZOJsdbPMb+ZPjg4+fvKoG0Un1xeX+aoEzwQCQIAAgABJWY9slNiEyLjaiwiCNE0JwFpTJ4339yaDXieOlLE6MBe1i5POv/...
+INFO  2023-05-29 01:48:07,118 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-29 01:48:07,119 minitest.py _miniSetUp      394 =========case: test_get_system_info start=========
+DEBUG 2023-05-29 01:48:07,120 connection.py _safely_send    417 SEND > {"id":"938fb7da-0536-418b-b9e7-f5e58bca7d79","method":"App.callWxMethod","params":{"method":"getSystemInfoSync","args":[]}}
+DEBUG 2023-05-29 01:48:07,125 connection.py _on_message     650 RECV < {"id":"938fb7da-0536-418b-b9e7-f5e58bca7d79","result":{"result":{"model":"iPhone 5","pixelRatio":2,"windowWidth":320,"windowHeight":456,"system":"iOS 10.0.1","language":"zh_CN","version":"8.0.5","deviceOrientation":"portrait","screenWidth":320,"screenHeight":568,"SDKVersion":"2.30.2","brand":"devtools","fontSizeSetting":16,"benchmarkLevel":1,"batteryLevel":35,"statusBarHeight":20,"bluetoothEnabled":true,"locationEnabled":true,"wifiEnabled":true,"cameraAuthorized":true,"locationAuthorized":true,"microphon...
+INFO  2023-05-29 01:48:07,176 minitest.py capture         673 capture assertIn-success.png
+INFO  2023-05-29 01:48:07,176 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-29 01:48:07,177 connection.py _safely_send    417 SEND > {"id":"7182586d-b4a4-4956-b022-9b21f7e07a09","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-29 01:48:07,445 connection.py _on_message     650 RECV < {"id":"7182586d-b4a4-4956-b022-9b21f7e07a09","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvFePZVmWHrbW2ua46024tJWVWa4te9qQHIJmSBF6ECgBAvSgFz0I0oN+j36AXgS+SBBESIAgkRhxMJzp4Uz3THVXd5mstOEjblx/7N57LT2cG1FZzR5CB4HICJwT955tcn3rM+fi//zzP2HnEbHX7SqlyrwQEY3kA59eF29mxYuzy6vttqj8/mR0MOglShRXMXHsnXHb9w96P/3+R900QjT7R4+ADKJZFvVvX7+dbdaeiBGERVgYIAAIgrAHAEQEABFhZmgPBBZpXMPBKVLMZOJsdbPMb+ZPjg4+fvKoG0Un1xeX+aoEzwQCQIAAgABJWY9slNiEyLjaiwiCNE0JwFpTJ4339yaDXieOlLE6MBe1i5POv/...
+INFO  2023-05-29 01:48:07,448 basenative.py wrapper         29  call IdeNative.screen_shot end
+DEBUG 2023-05-29 01:48:07,449 minitest.py _miniTearDown   587 =========Current case Down: test_get_system_info=========
+INFO  2023-05-29 01:48:07,450 minitest.py capture         673 capture teardown.png
+INFO  2023-05-29 01:48:07,450 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-29 01:48:07,451 connection.py _safely_send    417 SEND > {"id":"eff1f21c-eb5e-411c-860f-6e661f6478fe","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-29 01:48:07,663 connection.py _on_message     650 RECV < {"id":"eff1f21c-eb5e-411c-860f-6e661f6478fe","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvFePZVmWHrbW2ua46024tJWVWa4te9qQHIJmSBF6ECgBAvSgFz0I0oN+j36AXgS+SBBESIAgkRhxMJzp4Uz3THVXd5mstOEjblx/7N57LT2cG1FZzR5CB4HICJwT955tcn3rM+fi//zzP2HnEbHX7SqlyrwQEY3kA59eF29mxYuzy6vttqj8/mR0MOglShRXMXHsnXHb9w96P/3+R900QjT7R4+ADKJZFvVvX7+dbdaeiBGERVgYIAAIgrAHAEQEABFhZmgPBBZpXMPBKVLMZOJsdbPMb+ZPjg4+fvKoG0Un1xeX+aoEzwQCQIAAgABJWY9slNiEyLjaiwiCNE0JwFpTJ4339yaDXieOlLE6MBe1i5POv/...
+INFO  2023-05-29 01:48:07,666 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-29 01:48:07,667 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-05-29 01:48:07,667 basenative.py wrapper         29  call BaseNative.get_start_up end

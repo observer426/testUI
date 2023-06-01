@@ -1,0 +1,39 @@
+INFO  2023-06-01 18:45:42,666 minitest.py _miniSetUp      341 =========Current case: test_scroll_to=========
+INFO  2023-06-01 18:45:42,667 minitest.py _miniSetUp      344 package info: D:.test.test.first_test, case info: TestPage.test_scroll_to
+INFO  2023-06-01 18:45:42,668 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-06-01 18:45:42,668 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-06-01 18:45:42,668 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-06-01 18:45:42,669 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-06-01 18:45:42,669 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-06-01 18:45:42,670 connection.py _safely_send    417 ASYNC_SEND > {"id":"ffe7aa5f-332d-422d-8bc6-34a119931bc4","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/main/main"}]}}
+DEBUG 2023-06-01 18:45:42,688 connection.py _on_message     652 RECV < {"id":"ffe7aa5f-332d-422d-8bc6-34a119931bc4","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-06-01 18:45:42,688 connection.py _handle_async_msg 688 received async msg: ffe7aa5f-332d-422d-8bc6-34a119931bc4
+INFO  2023-06-01 18:45:42,691 minitest.py capture         673 capture setup.png
+INFO  2023-06-01 18:45:42,691 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-06-01 18:45:42,692 connection.py _safely_send    417 SEND > {"id":"9b8a494a-8948-4d09-b267-2f135d3acae5","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-06-01 18:45:42,920 connection.py _on_message     650 RECV < {"id":"9b8a494a-8948-4d09-b267-2f135d3acae5","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvFePZVmWHrbW2ua46024tJWVWa4te9qQHIJmSBF6ECgBAvSgFz0I0oN+j36AXgS+SBBESIAgkRhxMJzp4Uz3THVXd5mstOEjblx/7N57LT2cG1FZzR5CB4HICJwT955tcn3rM+fi//zzP2HnEbHX7SqlyrwQEY3kA59eF29mxYuzy6vttqj8/mR0MOglShRXMXHsnXHb9w96P/3+R900QjT7R4+ADKJZFvVvX7+dbdaeiBGERVgYIAAIgrAHAEQEABFhZmgPBBZpXMPBKVLMZOJsdbPMb+ZPjg4+fvKoG0Un1xeX+aoEzwQCQIAAgABJWY9slNiEyLjaiwiCNE0JwFpTJ4339yaDXieOlLE6MBe1i5POv/...
+INFO  2023-06-01 18:45:42,925 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-06-01 18:45:42,926 minitest.py _miniSetUp      394 =========case: test_scroll_to start=========
+DEBUG 2023-06-01 18:45:42,927 connection.py _safely_send    417 SEND > {"id":"7927e61b-d152-49fd-821d-14bf46535fa2","method":"App.addBinding","params":{"name":"page_hook_scroll_super_callback"}}
+DEBUG 2023-06-01 18:45:42,929 connection.py _on_message     652 RECV < {"id":"7927e61b-d152-49fd-821d-14bf46535fa2","result":{}}
+DEBUG 2023-06-01 18:45:42,930 connection.py _safely_send    417 SEND > {"id":"56838c33-ba00-47fc-a08b-eafb31134c6d","method":"App.callFunction","params":{"functionDeclaration":"function hookCurrentPageMethod(){var _=getCurrentPages().pop();if(_.scroll){if(_.scroll.__hooked__)return;var e=_.scroll;_.scroll=function(..._){\"undefined\"!=typeof page_hook_scroll_super_callback&&page_hook_scroll_super_callback(..._),e.call(this,..._)}.bind(_),_.scroll.__hooked__=!0}}","args":[]}}
+DEBUG 2023-06-01 18:45:42,933 connection.py _on_message     652 RECV < {"id":"56838c33-ba00-47fc-a08b-eafb31134c6d","result":{}}
+DEBUG 2023-06-01 18:45:42,934 minitest.py _miniTearDown   587 =========Current case Down: test_scroll_to=========
+INFO  2023-06-01 18:45:42,935 minitest.py capture         673 capture teardown.png
+INFO  2023-06-01 18:45:42,935 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-06-01 18:45:42,936 connection.py _safely_send    417 SEND > {"id":"ce50cf23-e8c5-4254-a888-3273b3e8cb08","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-06-01 18:45:43,170 connection.py _on_message     650 RECV < {"id":"ce50cf23-e8c5-4254-a888-3273b3e8cb08","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvFePZVmWHrbW2ua46024tJWVWa4te9qQHIJmSBF6ECgBAvSgFz0I0oN+j36AXgS+SBBESIAgkRhxMJzp4Uz3THVXd5mstOEjblx/7N57LT2cG1FZzR5CB4HICJwT955tcn3rM+fi//zzP2HnEbHX7SqlyrwQEY3kA59eF29mxYuzy6vttqj8/mR0MOglShRXMXHsnXHb9w96P/3+R900QjT7R4+ADKJZFvVvX7+dbdaeiBGERVgYIAAIgrAHAEQEABFhZmgPBBZpXMPBKVLMZOJsdbPMb+ZPjg4+fvKoG0Un1xeX+aoEzwQCQIAAgABJWY9slNiEyLjaiwiCNE0JwFpTJ4339yaDXieOlLE6MBe1i5POv/...
+INFO  2023-06-01 18:45:43,173 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-06-01 18:45:43,174 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-06-01 18:45:43,174 basenative.py wrapper         29  call BaseNative.get_start_up end
+ERROR 2023-06-01 18:45:43,186 assertbase.py _get_stack_info 342 <bound method TestPage.test_scroll_to of <test.first_test.TestPage testMethod=test_scroll_to>>
+Traceback (most recent call last):
+  File "D:\test\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 41, in testPartExecutor
+    yield
+  File "D:\test\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 127, in run
+    self._callTestMethod(testMethod)
+  File "D:\Python\lib\unittest\case.py", line 550, in _callTestMethod
+    method()
+  File "D:\test\test\first_test.py", line 26, in test_scroll_to
+    el = page.get_element("scroll-view")
+AttributeError: 'App' object has no attribute 'get_element'

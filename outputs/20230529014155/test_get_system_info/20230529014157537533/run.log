@@ -1,0 +1,40 @@
+INFO  2023-05-29 01:41:57,539 minitest.py _miniSetUp      341 =========Current case: test_get_system_info=========
+INFO  2023-05-29 01:41:57,539 minitest.py _miniSetUp      344 package info: D:.test.test.first_test, case info: FirstTest.test_get_system_info
+INFO  2023-05-29 01:41:57,540 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-05-29 01:41:57,541 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-05-29 01:41:57,541 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-05-29 01:41:57,542 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-05-29 01:41:57,542 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-05-29 01:41:57,543 connection.py _safely_send    417 ASYNC_SEND > {"id":"13747434-370b-489d-b0a6-106b517ccead","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/main/main"}]}}
+DEBUG 2023-05-29 01:41:57,593 connection.py _on_message     652 RECV < {"id":"13747434-370b-489d-b0a6-106b517ccead","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-29 01:41:57,594 connection.py _handle_async_msg 688 received async msg: 13747434-370b-489d-b0a6-106b517ccead
+INFO  2023-05-29 01:41:57,595 minitest.py capture         673 capture setup.png
+INFO  2023-05-29 01:41:57,596 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-29 01:41:57,597 connection.py _safely_send    417 SEND > {"id":"eb2baaa7-ced7-4b29-ad16-cdab11116cb0","method":"App.captureScreenshot","params":{}}
+WARNI 2023-05-29 01:42:57,608 utils.py   wrapper         88  第 1 次重新运行_framework_capture
+INFO  2023-05-29 01:42:57,610 utils.py   wrapper         91  原因: MiniTimeoutError('[eb2baaa7-ced7-4b29-ad16-cdab11116cb0][call App.captureScreenshot] receive from remote timeout',)
+INFO  2023-05-29 01:42:57,611 minitest.py capture         673 capture setup.png
+INFO  2023-05-29 01:42:57,612 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-29 01:42:57,613 connection.py _safely_send    417 SEND > {"id":"43f3ef8b-9fcd-4ecb-8ded-c2a13dba0dd2","method":"App.captureScreenshot","params":{}}
+ERROR 2023-05-29 01:43:57,622 utils.py   wrapper         156 catch error: [43f3ef8b-9fcd-4ecb-8ded-c2a13dba0dd2][call App.captureScreenshot] receive from remote timeout
+INFO  2023-05-29 01:43:57,625 minitest.py _miniSetUp      394 =========case: test_get_system_info start=========
+DEBUG 2023-05-29 01:43:57,627 connection.py _safely_send    417 SEND > {"id":"2f88a240-860e-48eb-82a4-c1209c039593","method":"App.callWxMethod","params":{"method":"getSystemInfoSync","args":[]}}
+DEBUG 2023-05-29 01:43:57,642 connection.py _on_message     650 RECV < {"id":"2f88a240-860e-48eb-82a4-c1209c039593","result":{"result":{"model":"iPhone 5","pixelRatio":2,"windowWidth":320,"windowHeight":456,"system":"iOS 10.0.1","language":"zh_CN","version":"8.0.5","deviceOrientation":"portrait","screenWidth":320,"screenHeight":568,"SDKVersion":"2.30.2","brand":"devtools","fontSizeSetting":16,"benchmarkLevel":1,"batteryLevel":44,"statusBarHeight":20,"bluetoothEnabled":true,"locationEnabled":true,"wifiEnabled":true,"cameraAuthorized":true,"locationAuthorized":true,"microphon...
+INFO  2023-05-29 01:43:57,819 minitest.py capture         673 capture assertIn-success.png
+INFO  2023-05-29 01:43:57,820 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-29 01:43:57,822 connection.py _safely_send    417 SEND > {"id":"9e82277c-d27d-4ae4-99e3-ce1cb6c41adb","method":"App.captureScreenshot","params":{}}
+WARNI 2023-05-29 01:44:57,838 utils.py   wrapper         88  第 1 次重新运行capture
+INFO  2023-05-29 01:44:57,838 utils.py   wrapper         91  原因: KeyboardInterrupt()
+INFO  2023-05-29 01:44:57,839 minitest.py capture         673 capture assertIn-success.png
+INFO  2023-05-29 01:44:57,840 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-29 01:44:57,841 connection.py _safely_send    417 SEND > {"id":"501c9d12-426a-43f2-98a5-78492cd51c55","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-29 01:45:35,614 connection.py _on_message     650 RECV < {"id":"501c9d12-426a-43f2-98a5-78492cd51c55","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJzEu8mypst1nreyz6//291U7epODxAEQEA2IYuOsOyBIzzSXWnsq7AnvgSLctCWGKRJgSABnLbqVNWu3f7d12e/NDiEQzdg6M1J5iiHz7vWehf5t//r/1SuG1pQlDOhIyQznKa5k4cdafJf/Le//DeffvopFWwYpqKoB3M69deH9rvv3v96PzwsmtXTy4+eXXzUlGs3+aEdfvubfzidTmfnH59vP33z1dv/43//3y4u+NkzTjMvygURZ0X+/JOXf/bi+afGzH/9t//u69d/vdykYsEuL589f/L567+7v399+sUvfvnzf/GLL7/+mmluvBnmcTSGMiqzTHBelBkQd+rfd+M75DtZDrPduSlxrDitKPJMUZ+Ok9...
+INFO  2023-05-29 01:45:35,617 basenative.py wrapper         29  call IdeNative.screen_shot end
+DEBUG 2023-05-29 01:45:35,618 minitest.py _miniTearDown   587 =========Current case Down: test_get_system_info=========
+INFO  2023-05-29 01:45:35,619 minitest.py capture         673 capture teardown.png
+INFO  2023-05-29 01:45:35,619 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-29 01:45:35,620 connection.py _safely_send    417 SEND > {"id":"0d7f6548-4357-4913-88ed-470d1d4a05f8","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-29 01:45:35,955 connection.py _on_message     650 RECV < {"id":"0d7f6548-4357-4913-88ed-470d1d4a05f8","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJzEu8mypst1nreyz6//291U7epODxAEQEA2IYuOsOyBIzzSXWnsq7AnvgSLctCWGKRJgSABnLbqVNWu3f7d12e/NDiEQzdg6M1J5iiHz7vWehf5t//r/1SuG1pQlDOhIyQznKa5k4cdafJf/Le//DeffvopFWwYpqKoB3M69deH9rvv3v96PzwsmtXTy4+eXXzUlGs3+aEdfvubfzidTmfnH59vP33z1dv/43//3y4u+NkzTjMvygURZ0X+/JOXf/bi+afGzH/9t//u69d/vdykYsEuL589f/L567+7v399+sUvfvnzf/GLL7/+mmluvBnmcTSGMiqzTHBelBkQd+rfd+M75DtZDrPduSlxrDitKPJMUZ+Ok9...
+INFO  2023-05-29 01:45:35,959 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-29 01:45:35,960 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-05-29 01:45:35,960 basenative.py wrapper         29  call BaseNative.get_start_up end

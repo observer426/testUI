@@ -1,0 +1,94 @@
+{
+    "case_name": "test_scroll_to",
+    "run_time": "20230601 19:40:19",
+    "test_type": "TestPage",
+    "case_doc": null,
+    "success": true,
+    "failures": "",
+    "errors": "",
+    "start_timestamp": 1685619619.5489042,
+    "is_failure": false,
+    "is_error": false,
+    "module": "D:.test.test.first_test",
+    "package": "test",
+    "failed_line_num": -1,
+    "device": {
+        "system_info": {
+            "model": "iPhone 5",
+            "pixelRatio": 2,
+            "windowWidth": 320,
+            "windowHeight": 456,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 320,
+            "screenHeight": 568,
+            "SDKVersion": "2.30.2",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 20,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 20,
+                "left": 0,
+                "right": 320,
+                "bottom": 568,
+                "width": 320,
+                "height": 548
+            },
+            "platform": "devtools",
+            "enableDebug": true,
+            "devicePixelRatio": 2,
+            "host": {
+                "env": "WeChat"
+            },
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "",
+    "error_value": "",
+    "error_stages": [],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/main/main",
+            "path": "images\\setup.png",
+            "ts": 1685619619,
+            "datetime": "2023-06-01 19:40:19"
+        },
+        {
+            "name": "teardown",
+            "url": "/pages/main/main",
+            "path": "images\\teardown.png",
+            "ts": 1685619620,
+            "datetime": "2023-06-01 19:40:20"
+        }
+    ],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1685619620.0356193,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_scroll_to(self):\n",
+            "        page = self.app.redirect_to(\"/pages/main/main\")\n"
+        ],
+        "start": 23
+    },
+    "filename": "result.json"
+}

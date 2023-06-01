@@ -1,0 +1,71 @@
+INFO  2023-06-01 19:07:21,601 minitest.py _miniSetUp      341 =========Current case: test_input=========
+INFO  2023-06-01 19:07:21,602 minitest.py _miniSetUp      344 package info: D:.test.test.first_test, case info: TestPage.test_input
+INFO  2023-06-01 19:07:21,603 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-06-01 19:07:21,603 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-06-01 19:07:21,604 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-06-01 19:07:21,604 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-06-01 19:07:21,605 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-06-01 19:07:21,605 connection.py _safely_send    417 ASYNC_SEND > {"id":"59f45870-2f6f-4c85-99bd-902d63757233","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/main/main"}]}}
+DEBUG 2023-06-01 19:07:21,630 connection.py _on_message     652 RECV < {"id":"59f45870-2f6f-4c85-99bd-902d63757233","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-06-01 19:07:21,632 connection.py _handle_async_msg 688 received async msg: 59f45870-2f6f-4c85-99bd-902d63757233
+INFO  2023-06-01 19:07:21,634 minitest.py capture         673 capture setup.png
+INFO  2023-06-01 19:07:21,635 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-06-01 19:07:21,636 connection.py _safely_send    417 SEND > {"id":"464b0e65-4d29-42e2-8830-eb7b2cd40d79","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-06-01 19:07:21,977 connection.py _on_message     650 RECV < {"id":"464b0e65-4d29-42e2-8830-eb7b2cd40d79","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJzEvNmuLUlyJWZmPsawxzPec29mVmUmS+xii2R3PwgtveoH9BvSv+hn9AUCBEhNECLVRBerWFU53eHMe4jZJzM93GILEEAKoCRyIYDwhwD8xbHM1zJbgf/j//Q/vH3z9ZvLL7xpliE83T9+97vf5gzXN99a2vzVf/irv/rL/+Xmjd7eoKpJ1Xttby92337z1Z/u99ePTx//9//jf34+/mZzAduL5u7Nz2q6/Ok/PkMw/+bf/rvL2+tPj/eiYI7LOI8hZ2W0dc46671OpT8P76fwEd0Bbbcs5xKUhpXGWqPWOsd8mJbDOJ1jiIVZwEyLHWZy9ebi+qpZNQTkVB1GNU3qfE5c6PLi+s31bYyzknB7vdntvMDST4...
+INFO  2023-06-01 19:07:21,988 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-06-01 19:07:21,988 minitest.py _miniSetUp      394 =========case: test_input start=========
+INFO  2023-06-01 19:07:21,989 app.py     navigate_to     522 NavigateTo: /pages/user-page-detail/modify/modify
+DEBUG 2023-06-01 19:07:21,991 connection.py _safely_send    417 ASYNC_SEND > {"id":"f067949f-5ae2-4dba-b04e-68c2f72ddcac","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/user-page-detail/modify/modify"}]}}
+DEBUG 2023-06-01 19:07:22,133 connection.py _on_message     652 RECV < {"id":"f067949f-5ae2-4dba-b04e-68c2f72ddcac","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+INFO  2023-06-01 19:07:22,135 connection.py _handle_async_msg 688 received async msg: f067949f-5ae2-4dba-b04e-68c2f72ddcac
+DEBUG 2023-06-01 19:07:22,828 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":5,"path":"pages/user-page-detail/modify/modify","query":{},"openType":"navigateTo","__ts__":1685617642812},1685617642814]}}
+INFO  2023-06-01 19:07:22,831 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 5, 'path': 'pages/user-page-detail/modify/modify', 'query': {}, 'openType': 'navigateTo', '__ts__': 1685617642812}, 1685617642814]}
+INFO  2023-06-01 19:07:22,831 page.py    _get_elements_by_css 559 try to get elements: view#111 >>> van-field
+DEBUG 2023-06-01 19:07:22,832 connection.py _safely_send    417 SEND > {"id":"0efbcfd8-f2cf-4f81-b827-4bfeb36813ce","method":"Page.getElements","params":{"selector":"view#111 ","pageId":5}}
+DEBUG 2023-06-01 19:07:23,143 connection.py _on_message     652 RECV < {"id":"0efbcfd8-f2cf-4f81-b827-4bfeb36813ce","error":{"message":"Failed to execute 'querySelectorAll' on 'Document': 'wx-view#111' is not a valid selector."}}
+ERROR 2023-06-01 19:07:23,144 connection.py _on_message     660 [0efbcfd8-f2cf-4f81-b827-4bfeb36813ce]: Failed to execute 'querySelectorAll' on 'Document': 'wx-view#111' is not a valid selector.
+DEBUG 2023-06-01 19:07:23,145 minitest.py _miniTearDown   587 =========Current case Down: test_input=========
+INFO  2023-06-01 19:07:23,146 minitest.py capture         673 capture teardown.png
+INFO  2023-06-01 19:07:23,147 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-06-01 19:07:23,148 connection.py _safely_send    417 SEND > {"id":"3a9f5fc8-60e2-4cba-8b1c-12eb9a483c2d","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-06-01 19:07:23,304 connection.py _on_message     650 RECV < {"id":"3a9f5fc8-60e2-4cba-8b1c-12eb9a483c2d","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAPwCAIAAAAu+lgBAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XtcVHXiP/6XDMzYsTNAjg0yioEaKIiajVqgKXlBacFcYyvt03V30+2z5Xe3+nzW2rbcPtttf7X7aa3tU20XrRbbEtcLXpZMxBRUFAcBRdDRGZ11EJiTJ2dwxt8fM9wHGG4eL6/nwz9g5lzeHHBe5/0+70u/M9W1ICIiokur38WLF5UuAxER0TUnSOkCEBERXYsYwERERApgABMRESmAAUxERKQABjAREZECGMBEREQKYAATEREpgAFMRESkAAYwERGRAhjARERECmAAExERKYABTEREpAAGMBERkQIYwERERApgABMRESmAAUxERKQABjAREZECGMBEREQKYAATEREpgAFMRESkAAYwERGRAhjARERECm...
+INFO  2023-06-01 19:07:23,316 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-06-01 19:07:23,317 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-06-01 19:07:23,318 basenative.py wrapper         29  call BaseNative.get_start_up end
+ERROR 2023-06-01 19:07:23,321 assertbase.py _get_stack_info 342 <bound method TestPage.test_input of <test.first_test.TestPage testMethod=test_input>>
+Traceback (most recent call last):
+  File "D:\test\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 41, in testPartExecutor
+    yield
+  File "D:\test\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 127, in run
+    self._callTestMethod(testMethod)
+  File "D:\Python\lib\unittest\case.py", line 550, in _callTestMethod
+    method()
+  File "D:\test\test\first_test.py", line 36, in test_input
+    el = page.get_element("view#111 >>> van-field")
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 160, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 277, in get_element
+    r = self.get_elements(
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 160, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 372, in get_elements
+    return self._get_elements_by_css(selector, max_timeout, index=index)
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 562, in _get_elements_by_css
+    els = search_elements(_selector_list)
+  File "D:\test\venv\lib\site-packages\minium\utils\utils.py", line 56, in wrapper
+    r = func(*args, **kwargs)
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 555, in search_elements
+    return self.__search_child(
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 519, in __search_child
+    els = self.__get_elements(_selector)
+  File "D:\test\venv\lib\site-packages\minium\utils\utils.py", line 82, in wrapper
+    return func(*args, **kwargs)
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 497, in __get_elements
+    ret = self._send("Page.getElements", {"selector": selector})
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 490, in _send
+    self.connection.send(method, params)
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 447, in send
+    return self._receive_response(cmd)
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 473, in _receive_response
+    raise response
+minium.framework.exception.MiniAppError: Failed to execute 'querySelectorAll' on 'Document': 'wx-view#111' is not a valid selector.

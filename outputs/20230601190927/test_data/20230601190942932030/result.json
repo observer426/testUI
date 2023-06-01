@@ -1,0 +1,127 @@
+{
+    "case_name": "test_data",
+    "run_time": "20230601 19:09:42",
+    "test_type": "TestPage",
+    "case_doc": null,
+    "success": true,
+    "failures": "",
+    "errors": "",
+    "start_timestamp": 1685617783.215039,
+    "is_failure": false,
+    "is_error": false,
+    "module": "D:.test.test.first_test",
+    "package": "test",
+    "failed_line_num": -1,
+    "device": {
+        "system_info": {
+            "model": "iPhone 5",
+            "pixelRatio": 2,
+            "windowWidth": 320,
+            "windowHeight": 456,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 320,
+            "screenHeight": 568,
+            "SDKVersion": "2.30.2",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 20,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 20,
+                "left": 0,
+                "right": 320,
+                "bottom": 568,
+                "width": 320,
+                "height": 548
+            },
+            "platform": "devtools",
+            "enableDebug": true,
+            "devicePixelRatio": 2,
+            "host": {
+                "env": "WeChat"
+            },
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "",
+    "error_value": "",
+    "error_stages": [],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/main/main",
+            "path": "images\\setup.png",
+            "ts": 1685617783,
+            "datetime": "2023-06-01 19:09:43"
+        },
+        {
+            "name": "assertEqual-success",
+            "url": "/pages/main/main",
+            "path": "images\\assertEqual-success.png",
+            "ts": 1685617783,
+            "datetime": "2023-06-01 19:09:43"
+        },
+        {
+            "name": "teardown",
+            "url": "/pages/main/main",
+            "path": "images\\teardown.png",
+            "ts": 1685617784,
+            "datetime": "2023-06-01 19:09:44"
+        }
+    ],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [
+        {
+            "name": "assertEqual",
+            "ret": true,
+            "msg": null,
+            "img": "assertEqual-success",
+            "wxml": ""
+        }
+    ],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1685617784.238856,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_data(self):\n",
+            "        page = self.app.redirect_to(\"/pages/main/main\")\n",
+            "        # el = page.get_element(\"#view.news-item > .new-source > .new-title > .question-link\").get_element(\"text\")  # text_name\n",
+            "        # print(el.text)\n",
+            "        # self.assertDictEqual({\n",
+            "        #    \"\u5357\u65b9\u79d1\u6280\u5927\u5b66\u9884\u7ea6\u5c0f\u7a0b\u5e8f\u4e0a\u7ebf\"\n",
+            "        # }, el.text, \"data equal\")\n",
+            "        el = page.get_element(\".booking-text\")\n",
+            "        print(el.text)\n",
+            "        self.assertEqual(\"\u4e2a\u4eba\u9884\u7ea6\u53c2\u89c2\", el.text, \"data equal\")\n",
+            "\n",
+            "    # def test_scroll_to(self):\n",
+            "        # page = self.app.redirect_to(\"/pages/main/main\")\n",
+            "        # callback = Callback()\n",
+            "        # # \u76d1\u542c\u6eda\u52a8\u4e8b\u4ef6, \u65b9\u4fbf\u6700\u540e\u9a8c\u8bc1\u6eda\u52a8\u7ed3\u679c\n",
+            "        # self.app.hook_current_page_method(\"scroll\", callback.callback)\n",
+            "        # el = page.get_element(\"scroll-view\")\n",
+            "        # el.scroll_to(x=20)  # \u6a2a\u5411\u6eda\u52a820\u50cf\u7d20\n",
+            "        # self.assertTrue(callback.wait_called(timeout=10), \"callback called\")\n",
+            "        # self.assertEqual(callback.get_callback_result()[\"detail\"][\"scrollLeft\"], 20, \"pick ok\")\n"
+        ],
+        "start": 12
+    },
+    "filename": "result.json"
+}

@@ -1,0 +1,60 @@
+INFO  2023-06-01 18:40:27,284 minitest.py _miniSetUp      341 =========Current case: test_input=========
+INFO  2023-06-01 18:40:27,286 minitest.py _miniSetUp      344 package info: D:.test.test.first_test, case info: TestPage.test_input
+INFO  2023-06-01 18:40:27,287 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-06-01 18:40:27,288 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-06-01 18:40:27,289 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-06-01 18:40:27,291 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-06-01 18:40:27,293 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-06-01 18:40:27,294 connection.py _safely_send    417 ASYNC_SEND > {"id":"a94853ea-cc50-4256-8b0d-a2c31ec121de","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/main/main"}]}}
+DEBUG 2023-06-01 18:40:27,358 connection.py _on_message     652 RECV < {"id":"a94853ea-cc50-4256-8b0d-a2c31ec121de","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-06-01 18:40:27,360 connection.py _handle_async_msg 688 received async msg: a94853ea-cc50-4256-8b0d-a2c31ec121de
+INFO  2023-06-01 18:40:27,364 minitest.py capture         673 capture setup.png
+INFO  2023-06-01 18:40:27,368 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-06-01 18:40:27,371 connection.py _safely_send    417 SEND > {"id":"7b65f5d2-4f83-435c-8ca9-dd23e5fc222e","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-06-01 18:40:27,778 connection.py _on_message     650 RECV < {"id":"7b65f5d2-4f83-435c-8ca9-dd23e5fc222e","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvdeyLElyIObuITKzxJFXtrh3uqd7BAYLWwJYriBpMGKNTzQaH8gH/gI/gf/DB/KRfCHX1mgLWxoxwAgAQ47q7mktrjyqVGaGcOdDqcw8VVl16pxz+84A3m3nVlVkRHhGeITL8MD/8X/67x/8l/9rHghWAQIgAADw7K8AgAAIAgCQrKwEACAiLV93AwaIyFs+3OgREdc+igIwfSUEIJDaUCAKzKuKCPMSAQFovJWIENGsL16L6uWKWwKhrHsNRERU6zoU4XmfCLPBoWrd6qONZhsNrcOt8SSvf31AAlz2LgJSHRFcOzyIuG4epzS5dnTaIXK1kcXn64Aslw4AQAPr3dAEgJZlJNK2yHZ+nRZU2xd1y4LbAL...
+INFO  2023-06-01 18:40:27,790 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-06-01 18:40:27,792 minitest.py _miniSetUp      394 =========case: test_input start=========
+INFO  2023-06-01 18:40:27,793 app.py     redirect_to     544 RedirectTo: pages/user-page-detail/modify/modify
+DEBUG 2023-06-01 18:40:27,796 connection.py _safely_send    417 ASYNC_SEND > {"id":"d86c3792-4021-43dd-9343-ac82236f6b11","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"pages/user-page-detail/modify/modify"}]}}
+DEBUG 2023-06-01 18:40:27,801 connection.py _on_message     652 RECV < {"id":"d86c3792-4021-43dd-9343-ac82236f6b11","error":{"message":"page \"pages/main/pages/user-page-detail/modify/modify\" is not found"}}
+ERROR 2023-06-01 18:40:27,803 connection.py _on_message     660 [d86c3792-4021-43dd-9343-ac82236f6b11]: page "pages/main/pages/user-page-detail/modify/modify" is not found
+INFO  2023-06-01 18:40:27,804 connection.py _handle_async_msg 688 received async msg: d86c3792-4021-43dd-9343-ac82236f6b11
+DEBUG 2023-06-01 18:40:27,805 minitest.py _miniTearDown   587 =========Current case Down: test_input=========
+INFO  2023-06-01 18:40:27,808 minitest.py capture         673 capture teardown.png
+INFO  2023-06-01 18:40:27,810 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-06-01 18:40:27,812 connection.py _safely_send    417 SEND > {"id":"f952cf42-4a9b-4f49-864a-0fd3dd24cef9","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-06-01 18:40:28,125 connection.py _on_message     650 RECV < {"id":"f952cf42-4a9b-4f49-864a-0fd3dd24cef9","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWmPLMmRIGZmfkREXlX1Xr2r74tkc0jOaGYxo9VgtCvsQtr9JkCAAH3R/9C/ESBA3/aDBF3YBXZXmhmSw0Mz4pDDZl/sft397npVlZVHRPhhpg95RWRlRmZlVb1+zaF1o15meri7hbu53e6O/8P/KbAGEAABAICnfwUABEAQAIDW1gMRafi6GzBARN7y4aUeEXHtoygAk1dCAAKhekWBWVURYV4gIABLbyUiRDTti9eier7ilkAo614DERHVug5FeNYnwnRwqFq3+uhSs0sNrcNt6Ule//qABLjoXQSkOiK4dngQcd08Tmhy7eg0Q+RqI/PPlwFZLB0AgCWsd0MTABqWkUjTItv5dRpQbV7UDQtuA9QX4O...
+INFO  2023-06-01 18:40:28,133 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-06-01 18:40:28,135 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-06-01 18:40:28,139 basenative.py wrapper         29  call BaseNative.get_start_up end
+ERROR 2023-06-01 18:40:28,146 assertbase.py _get_stack_info 342 <bound method TestPage.test_input of <test.first_test.TestPage testMethod=test_input>>
+Traceback (most recent call last):
+  File "D:\test\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 41, in testPartExecutor
+    yield
+  File "D:\test\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 127, in run
+    self._callTestMethod(testMethod)
+  File "D:\Python\lib\unittest\case.py", line 550, in _callTestMethod
+    method()
+  File "D:\test\test\first_test.py", line 24, in test_input
+    page = self.app.redirect_to("pages/user-page-detail/modify/modify")
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 160, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\test\venv\lib\site-packages\minium\utils\utils.py", line 82, in wrapper
+    return func(*args, **kwargs)
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\app.py", line 545, in redirect_to
+    page = self._change_route_async("redirectTo", url, is_wait_url_change)
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\app.py", line 758, in _change_route_async
+    cmd.get_open_result(wait_timeout)
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\app.py", line 123, in get_open_result
+    return self._open_callback.get_result()
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\callback.py", line 126, in get_result
+    return self._waiter.result()
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\callback.py", line 105, in wait_called
+    return self._loop.run_coroutine(
+  File "D:\Python\lib\concurrent\futures\_base.py", line 446, in result
+    return self.__get_result()
+  File "D:\Python\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "D:\test\venv\lib\site-packages\minium\utils\utils.py", line 409, in async_wait
+    return fut.result()
+minium.framework.exception.MiniAppError: page "pages/main/pages/user-page-detail/modify/modify" is not found

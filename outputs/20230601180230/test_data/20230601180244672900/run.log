@@ -1,0 +1,58 @@
+INFO  2023-06-01 18:02:44,674 minitest.py _miniSetUp      341 =========Current case: test_data=========
+INFO  2023-06-01 18:02:44,675 minitest.py _miniSetUp      344 package info: D:.test.test.first_test, case info: TestPage.test_data
+INFO  2023-06-01 18:02:44,676 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-06-01 18:02:44,677 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-06-01 18:02:44,677 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-06-01 18:02:44,679 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-06-01 18:02:44,679 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-06-01 18:02:44,681 connection.py _safely_send    417 ASYNC_SEND > {"id":"da1abd96-3bf8-47f5-8fc5-46dfc41d37c8","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/main/main"}]}}
+DEBUG 2023-06-01 18:02:44,700 connection.py _on_message     652 RECV < {"id":"da1abd96-3bf8-47f5-8fc5-46dfc41d37c8","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-06-01 18:02:44,700 connection.py _handle_async_msg 688 received async msg: da1abd96-3bf8-47f5-8fc5-46dfc41d37c8
+INFO  2023-06-01 18:02:44,702 minitest.py capture         673 capture setup.png
+INFO  2023-06-01 18:02:44,703 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-06-01 18:02:44,704 connection.py _safely_send    417 SEND > {"id":"587f876a-ec55-445f-97c7-0f1199e4242d","method":"App.captureScreenshot","params":{}}
+WARNI 2023-06-01 18:03:44,708 utils.py   wrapper         88  第 1 次重新运行_framework_capture
+INFO  2023-06-01 18:03:44,711 utils.py   wrapper         91  原因: MiniTimeoutError('[587f876a-ec55-445f-97c7-0f1199e4242d][call App.captureScreenshot] receive from remote timeout',)
+INFO  2023-06-01 18:03:44,712 minitest.py capture         673 capture setup.png
+INFO  2023-06-01 18:03:44,714 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-06-01 18:03:44,715 connection.py _safely_send    417 SEND > {"id":"89e13624-80aa-46e3-87fc-ba4dc6bfb526","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-06-01 18:04:02,805 connection.py _on_message     650 RECV < {"id":"89e13624-80aa-46e3-87fc-ba4dc6bfb526","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJzEu8mybclxpuce/ep2v09z+5sdCII0gEQZG6k0KGmggQaa6J001WPUSFMNpBIllYwSiyUWQTCRQAJ5M293un12s/bqoncNLsRHgNxsma1RTCLCfvfv/wP/+//hv2q2CyyR1AT8jGkc2mk6q/2O5uVf/cWf/3dffPWaS+x7V1XzwZ5O3fv9+bvfvf2Hx+FhOV8/u/r8+fXni3rtxtCfun/+5T+d28Pl5ZcXm6/e/OaH//Hf/tuLS7x6ydEEWS9QXpbVqy9f/PTVy69GO/5ff/e//Pb7/3t1meo5u756+ezpV9///ePDm/Of/fzPf/av/uybb3/DtZiC7adhcpYJoY2RSpalBnSn84fz9JbETlbd5B/iyHieC9...
+INFO  2023-06-01 18:04:02,809 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-06-01 18:04:02,811 minitest.py _miniSetUp      394 =========case: test_data start=========
+INFO  2023-06-01 18:04:02,812 app.py     redirect_to     544 RedirectTo: /pages/main/main
+DEBUG 2023-06-01 18:04:02,813 connection.py _safely_send    417 ASYNC_SEND > {"id":"d9534b2a-774d-4526-bd97-f05b46980bc3","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/main/main"}]}}
+DEBUG 2023-06-01 18:04:02,912 connection.py _on_message     652 RECV < {"id":"d9534b2a-774d-4526-bd97-f05b46980bc3","result":{"result":{"errMsg":"redirectTo:ok"}}}
+INFO  2023-06-01 18:04:02,914 connection.py _handle_async_msg 688 received async msg: d9534b2a-774d-4526-bd97-f05b46980bc3
+DEBUG 2023-06-01 18:04:03,310 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/main/main","query":{},"openType":"redirectTo","__ts__":1685613843228},1685613843230]}}
+INFO  2023-06-01 18:04:03,314 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/main/main', 'query': {}, 'openType': 'redirectTo', '__ts__': 1685613843228}, 1685613843230]}
+INFO  2023-06-01 18:04:03,315 page.py    _get_elements_by_css 559 try to get elements: .news-item > .new-source > text
+DEBUG 2023-06-01 18:04:03,316 connection.py _safely_send    417 SEND > {"id":"73d8d401-026e-4cdc-a06f-a3b62f9e2ea9","method":"Page.getElements","params":{"selector":".news-item > .new-source > text","pageId":4}}
+DEBUG 2023-06-01 18:04:03,636 connection.py _on_message     652 RECV < {"id":"73d8d401-026e-4cdc-a06f-a3b62f9e2ea9","result":{"elements":[]}}
+WARNI 2023-06-01 18:04:03,639 page.py    _get_elements_by_css 564 Could not found any element '.news-item > .new-source > text' you need
+DEBUG 2023-06-01 18:04:03,641 minitest.py _miniTearDown   587 =========Current case Down: test_data=========
+INFO  2023-06-01 18:04:03,642 minitest.py capture         673 capture teardown.png
+INFO  2023-06-01 18:04:03,643 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-06-01 18:04:03,644 connection.py _safely_send    417 SEND > {"id":"8062ed5f-2d58-47f0-a78c-d0acfbec2787","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-06-01 18:04:04,053 connection.py _on_message     650 RECV < {"id":"8062ed5f-2d58-47f0-a78c-d0acfbec2787","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAoAAAAOQCAIAAAAmDldbAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvFePZVmWHrbW2ua46024tJWVWa4te9qQHIJmSBF6ECgBAvSgFz0I0oN+j36AXgS+SBBESIAgkRhxMJzp4Uz3THVXd5mstOEjblx/7N57LT2cG1FZzR5CB4HICJwT955tcn3rM+fi//zzP2HnEbHX7SqlyrwQEY3kA59eF29mxYuzy6vttqj8/mR0MOglShRXMXHsnXHb9w96P/3+R900QjT7R4+ADKJZFvVvX7+dbdaeiBGERVgYIAAIgrAHAEQEABFhZmgPBBZpXMPBKVLMZOJsdbPMb+ZPjg4+fvKoG0Un1xeX+aoEzwQCQIAAgABJWY9slNiEyLjaiwiCNE0JwFpTJ4339yaDXieOlLE6MBe1i5POv/...
+INFO  2023-06-01 18:04:04,057 basenative.py wrapper         29  call IdeNative.screen_shot end
+DEBUG 2023-06-01 18:04:04,057 connection.py _safely_send    417 SEND > {"id":"3ff9d5b7-6b08-47af-b2b3-0daa6adcc90f","method":"Page.getElementByXpath","params":{"selector":"/*","pageId":4}}
+DEBUG 2023-06-01 18:04:04,072 connection.py _on_message     652 RECV < {"id":"3ff9d5b7-6b08-47af-b2b3-0daa6adcc90f","result":{"elementId":"be92e38a-51db-4d41-be9b-d93ba46927ea","tagName":"scroll-view"}}
+DEBUG 2023-06-01 18:04:04,073 connection.py _safely_send    417 SEND > {"id":"b5be1724-6709-4015-972a-1227f2869d5c","method":"Element.getWXML","params":{"type":"outer","elementId":"be92e38a-51db-4d41-be9b-d93ba46927ea","pageId":4}}
+DEBUG 2023-06-01 18:04:04,085 connection.py _on_message     650 RECV < {"id":"b5be1724-6709-4015-972a-1227f2869d5c","result":{"wxml":"<scroll-view class=\"container\" lower-threshold=\"5\" scroll-into-view=\"\" scroll-top=\"0\" scroll-y=\"\" upper-threshold=\"10\" enable-back-to-top=\"\"><view class=\"swiper_images\" style=\"height: 25%;\"><swiper autoplay=\"\" duration=\"1000\" indicator-dots=\"\" style=\"height: 100%;\" role=\"listbox\"><swiper-item style=\"position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);\"><image mode=\"widthF...
+INFO  2023-06-01 18:04:04,087 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-06-01 18:04:04,089 basenative.py wrapper         29  call BaseNative.get_start_up end
+ERROR 2023-06-01 18:04:04,095 assertbase.py _get_stack_info 342 <bound method TestPage.test_data of <test.first_test.TestPage testMethod=test_data>>
+Traceback (most recent call last):
+  File "D:\test\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 41, in testPartExecutor
+    yield
+  File "D:\test\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 127, in run
+    self._callTestMethod(testMethod)
+  File "D:\Python\lib\unittest\case.py", line 550, in _callTestMethod
+    method()
+  File "D:\test\test\first_test.py", line 12, in test_data
+    el = page.get_element(".news-item > .new-source > text")  # text_name
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 160, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\test\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 286, in get_element
+    raise MiniElementNotFoundError("element[%s] not found" % selector)
+minium.framework.exception.MiniElementNotFoundError: element[.news-item > .new-source > text] not found
